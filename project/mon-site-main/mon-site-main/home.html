@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Offres de Stages</title>
+    <meta charset="UTF-8" data-theme="light">
+    <script src="Script/script.js" defer></script>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header>
+        <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
+        <button class="header-btn"><p class="header-main-page" id ="home-btn">Page d'accueil</p></button>
+        <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
+        <button class="header-btn"><p class="header-page" id ="contact-btn" href="contacte.php">Contact</p></button>
+        <button class="header-btn"><p class="header-page" id ="connexion-btn">Connexion</p></button>
+        <button id ="mode-btn" class="mode" >Mode 🌚</button>
+    </header>
+    <main>
+        <div class="offers-container">
+            <h1 class="offers-title">Offres de Stages</h1>
+
+            <!-- Liste des offres de stages -->
+            <div class="offer">
+                <h2>Stage en Développement Web</h2>
+                <p><strong>Entreprise :</strong> TechCorp</p>
+                <p><strong>Lieu :</strong> Paris</p>
+                <p><strong>Description :</strong> Nous recherchons un stagiaire pour participer au développement de nos applications web.</p>
+                <button class="apply-btn" onclick="applyToOffer('Stage en Développement Web')">Postuler</button>
+            </div>
+
+            <div class="offer">
+                <h2>Stage en Marketing Digital</h2>
+                <p><strong>Entreprise :</strong> MarketPro</p>
+                <p><strong>Lieu :</strong> Lyon</p>
+                <p><strong>Description :</strong> Aidez-nous à créer des campagnes publicitaires innovantes.</p>
+                <button class="apply-btn" onclick="applyToOffer('Stage en Marketing Digital')">Postuler</button>
+            </div>
+
+            <div class="offer">
+                <h2>Stage en Data Science</h2>
+                <p><strong>Entreprise :</strong> DataX</p>
+                <p><strong>Lieu :</strong> Bordeaux</p>
+                <p><strong>Description :</strong> Participez à des projets d'analyse de données et de machine learning.</p>
+                <button class="apply-btn" onclick="applyToOffer('Stage en Data Science')">Postuler</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ADALG. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function applyToOffer(offerTitle) {
+            alert(`Vous avez postulé à l'offre : ${offerTitle}`);
+            // Rediriger vers une page de confirmation ou de connexion si nécessaire
+        }
+    </script>
+</body>
+</html>

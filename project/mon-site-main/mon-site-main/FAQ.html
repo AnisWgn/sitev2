@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <Title>Questions fréquentes</Title>
+    <meta charset="UTF-8" data-theme="light">
+    <script src="Script/script.js" defer></script>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <style>
+            .header-main-page{
+            box-shadow:none;
+        }
+        .header-page1 {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: inline-block;
+            transition: box-shadow 0.5s ease-in-out;
+            opacity: 1; /* Empêche toute réduction d'opacité */
+            color: var(--header-page-text-color);
+            box-shadow:0px 2px 0px 0px var(--header-page-hover-box-shadow);
+    }
+    </style>
+    <header>
+        <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
+        <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
+        <button class="header-btn"><p class="header-page1" id ="faq-btn">Question fréquente</p></button>
+        <button class="header-btn"><p class="header-page" id ="contact-btn">Contact</p></button>
+        <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
+        <button id ="mode-btn" class="mode" >Mode 🌚</button>
+    </header>
+    <main>
+        <div class="faq-container">
+            <h1 class="faq-title">Questions fréquentes</h1>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment créer un compte ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Pour créer un compte, cliquez sur le bouton "S'inscrire" sur notre page de connexion. Remplissez le formulaire avec vos informations personnelles et suivez les instructions pour compléter votre inscription.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>J'ai oublié mon mot de passe, que faire ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Si vous avez oublié votre mot de passe, cliquez sur le lien "Mot de passe oublié ?" sur la page de connexion. Vous recevrez un email avec les instructions pour réinitialiser votre mot de passe.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment contacter le service client ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Vous pouvez contacter notre service client en utilisant la page "Contact" accessible depuis le menu principal. Remplissez le formulaire de contact et nous vous répondrons dans les meilleurs délais.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment fonctionne le mode sombre ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Pour activer ou désactiver le mode sombre, cliquez simplement sur le bouton "Mode 🌚" situé dans l'en-tête du site. Cela changera instantanément l'apparence du site pour une meilleure expérience visuelle selon vos préférences.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Est-ce que mes données sont sécurisées ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, nous prenons la sécurité de vos données très au sérieux. Toutes les informations personnelles sont cryptées et stockées en toute sécurité conformément aux réglementations sur la protection des données. Pour plus d'informations, consultez notre politique de confidentialité.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment mettre à jour mes informations personnelles ?</h3>
+                </div>
+                <div class="faq-answer">
+                    <p>Une fois connecté à votre compte, accédez à votre profil en cliquant sur votre nom d'utilisateur. Vous pourrez alors modifier vos informations personnelles dans la section "Paramètres du compte".</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 ADALG. Tous droits réservés.</p>
+    </footer>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Clicker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="game-title">Cyber Clicker</h1>
+            <p class="subtitle">Protégez votre réseau en cliquant!</p>
+        </header>
+        
+        <div class="game-area">
+            <div class="score-display" id="points-container">
+                <span id="points">0</span> points
+                <small><span id="points-per-second">0</span> points par seconde</small>
+            </div>
+            
+            <div class="click-button-container">
+                <button id="clickBtn" class="click-button">CLIQUEZ</button>
+                <div id="pulseRing" class="pulse-ring"></div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Améliorations</h2>
+                <div class="upgrades-container" id="upgradesContainer">
+                    <!-- Upgrades will be generated here -->
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Statistiques</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 class="stat-title">Clics Totaux</h3>
+                        <div class="stat-value" id="total-clicks">0</div>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-title">Points par Clic</h3>
+                        <div class="stat-value" id="points-per-click">1</div>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-title">Temps de Jeu</h3>
+                        <div class="stat-value" id="play-time">00:00</div>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-title">Score Total</h3>
+                        <div class="stat-value" id="total-score">0</div>
+                    </div>
+                </div>
+                
+                <div class="achievements" id="achievements">
+                    <h2 class="section-title">Réussites</h2>
+                    <!-- Achievements will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="notification-container" id="notification-container"></div>
+
+    <footer>
+        <p>Cyber Clicker v1.0 | Un jeu sur la cybersécurité</p>
+    </footer>
+</body>
+</html>

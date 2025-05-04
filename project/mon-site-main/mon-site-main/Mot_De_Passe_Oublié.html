@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <Title>Page de connexion</Title>
+    <meta charset="UTF-8" data-theme="light">
+    <script src="Script/script.js" defer></script>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header>
+        <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
+        <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
+        <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
+        <button class="header-btn"><p class="header-page" id ="contact-btn" href="contact.php">Contact</p></button>
+        <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
+        <button id ="mode-btn" class="mode" >Mode 🌚</button>   
+    </header>
+    <main>
+        <div class="login-container">
+            <h1 class="login-title">Mot de passe oublié</h1>
+            <form action="traitement.php" method="post">
+                <div class="input-group">
+                    <label for="username"><strong>Identifiant ou email :</strong></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <button type="submit" class="login-btn">Récupérer le mot de passe</button>           
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 ADALG. Tous droits réservés.</p>
+    </footer>
+</body>
